@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-Phase 1 - Step 1: Acquire HuMicA v2.0.0 (.h5ad) from Zenodo record 18458280.
+Acquire HuMicA v2.0.0 (.h5ad) from Zenodo record 18458280.
 
 import os, sys, json, hashlib, csv, datetime, time, re
 import urllib.request
