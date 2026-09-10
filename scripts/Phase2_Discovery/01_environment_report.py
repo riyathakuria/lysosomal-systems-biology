@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-"""
-Phase 1 - Step 3: Software validation & environment report.
-
 import os, sys, platform, datetime
 import importlib.metadata as ilm
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from _env import ROOT
 DOCS = os.path.join(ROOT, "docs")
 
 PKGS = ["scanpy", "anndata", "h5py", "numba", "scipy", "pandas",
