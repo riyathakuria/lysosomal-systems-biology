@@ -4,7 +4,8 @@ Acquire HuMicA v2.0.0 (.h5ad) from Zenodo record 18458280.
 import os, sys, json, hashlib, csv, datetime, time, re
 import urllib.request
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from _env import ROOT
 RAW_DIR = os.path.join(ROOT, "data", "raw")
 MANIFEST = os.path.join(ROOT, "data", "download_manifest.csv")
 
