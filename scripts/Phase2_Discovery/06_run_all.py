@@ -13,7 +13,7 @@ from pathlib import Path
 # Paths & environment
 # ---------------------------------------------------------------------------
 SCRIPTS_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = SCRIPTS_DIR.parent
+PROJECT_ROOT = SCRIPTS_DIR.parents[1]
 
 # Writable numba cache before any scanpy import in child processes.
 _NUMBA_CACHE = PROJECT_ROOT / "data" / "external" / ".numba_cache"
